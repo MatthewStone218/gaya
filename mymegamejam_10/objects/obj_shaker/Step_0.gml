@@ -4,24 +4,26 @@
 
 array_foreach(shakes,function(element,index) {
 	
-	var target = element.target;
-		if !instance_exists(target) exit;
-	var value = element.value;
+	try {
 	
-	if instance_exists(target) {
-		with(target) {
-			dt_draw_x = lengthdir_x(value,irandom(359));
-			dt_draw_y = lengthdir_y(value,irandom(359));
+		var target = element.target;
+		var value = element.value;
+	
+		if instance_exists(target) {
+			with(target) {
+				dt_draw_x = lengthdir_x(value,irandom(359));
+				dt_draw_y = lengthdir_y(value,irandom(359));
+			}
+		} else { return; }
+	
+		shakes[index].value = value - 1;
+	
+		if (shakes[index].value <= 0) {
+			with(target) { dt_draw_x = 0; dt_draw_y = 0; }
+			array_delete(shakes,index,1);
 		}
-	} else { return; }
-	
-	shakes[index].value = value - 1;
-	
-	if (shakes[index].value <= 0) {
-		with(target) { dt_draw_x = 0; dt_draw_y = 0; }
-		array_delete(shakes,index,1);
-	}
-	index -= 1;
+		index -= 1;
+	} catch(e){}
 });
 
 if (shake_display_value > 0)
