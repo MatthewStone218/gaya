@@ -48,7 +48,9 @@ function next() {
 next();
 
 function final() {
-	stage_clear();
+	stage_clear(1,function() {
+		global.upgrades[0] = 0;
+	});
 }
 
 

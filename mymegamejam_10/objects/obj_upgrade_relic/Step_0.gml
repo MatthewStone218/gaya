@@ -20,13 +20,20 @@ y = room_height/2 + lengthdir_y(120,rotate);
 
 depth = -y;
 
-if (global.upgrades[my_index] == 0) 
+if (global.upgrades[my_index] == -1) 
 {
 	sprite_index = spr_upgrade_relic_locked;
 	image_index = 0;
+}
+else if (global.upgrades[my_index] == 0) 
+{
+	sprite_index = spr_upgrade_relic;
+	image_index = my_index;
+	image_blend = c_ltgray;
 }
 else
 {
 	sprite_index = spr_upgrade_relic;
 	image_index = my_index;
+	image_blend = c_white;
 }
