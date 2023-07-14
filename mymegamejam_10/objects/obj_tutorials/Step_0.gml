@@ -16,3 +16,13 @@ if (tuto_text_step_now >= tuto_text_step)
 		tuto_text_now_index = min(tuto_text_now_index,string_length(tuto_text));
 	tuto_text_now = string_copy(tuto_text,1,tuto_text_now_index);
 }
+
+
+switch(tuto_index) {
+	default:	break;
+	case 1:
+		if keyboard_check_pressed(vk_left) key_left = true;
+		if keyboard_check_pressed(vk_right) key_right = true;
+		if (key_left && key_right) next();
+		break;
+}

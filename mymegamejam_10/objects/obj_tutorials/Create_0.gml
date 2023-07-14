@@ -12,11 +12,15 @@ tuto_text_alpha = 0;
 
 sequence = [
 	function() {
-		tuto_text = "TEST1TEST1TEST1TEST1TEST1TEST1TEST1TEST1TEST1TEST1";
+		tuto_text = "키보드 방향키를 눌러 캐릭터를 움직여 보세요.";
 		tuto_text_alpha = 0;
 	},
 	function() {
-		tuto_text = "TEST2TEST2TEST2TEST2TEST2TEST2TEST2TEST2TEST2TEST2";
+		tuto_text = "적과 같은 칸에 있으면 ‘Z’를 눌러 적을 공격 할 수 있습니다.";
+		tuto_text_alpha = 0;
+	},
+	function() {
+		tuto_text = "‘X’키를 눌러 빠르게 귀환할 수 있습니다.";
 		tuto_text_alpha = 0;
 	},
 ];
@@ -41,3 +45,8 @@ next();
 function final() {
 	room_goto(rm_game_1);
 }
+
+
+//일회성 튜토리얼 변수
+key_left = false;
+key_right = false;
