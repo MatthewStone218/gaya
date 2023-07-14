@@ -11,11 +11,12 @@ array_foreach(shakes,function(element,index) {
 			dt_draw_x = lengthdir_x(value,irandom(359));
 			dt_draw_y = lengthdir_y(value,irandom(359));
 		}
-	}
+	} else { return; }
 	
 	shakes[index].value = value - 1;
 	
 	if (shakes[index].value <= 0) {
+		with(target) { dt_draw_x = 0; dt_draw_y = 0; }
 		array_delete(shakes,index,1);
 	}
 });
@@ -30,4 +31,7 @@ if (shake_display_value > 0)
 	camera_set_view_pos(cam,view_x+dt_view_x,view_y+dt_view_y);
 	
 	shake_display_value -= 1;
+	if (shake_display_value <= 0) {
+		camera_set_view_pos(cam,view_x,view_y);
+	}
 }
