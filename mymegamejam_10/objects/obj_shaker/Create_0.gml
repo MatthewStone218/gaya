@@ -3,10 +3,6 @@
 
 
 shakes = [
-	{
-		target: noone,
-		value: 0,
-	}
 ];
 
 function shake(target,value) {
