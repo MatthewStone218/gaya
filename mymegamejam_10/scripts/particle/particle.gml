@@ -4,7 +4,7 @@ function particle(count,colour,scale,dir){
 	repeat(count) {
 		var cr_x = x+lengthdir_x(random_range(-16,16),irandom(359));
 		var cr_y = y+lengthdir_y(random_range(-16,16),irandom(359));
-		var ins = instance_create_depth(cr_x,cr_y,depth-1,obj_particle);
+		var ins = instance_create_depth(cr_x,cr_y,depth+1,obj_particle);
 		with(ins)
 		{
 			color = colour;
