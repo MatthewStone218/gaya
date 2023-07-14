@@ -3,6 +3,8 @@
 
 
 array_foreach(shakes,function(element,index) {
+	if !instance_exists(target) exit;
+	
 	var target = element.target;
 	var value = element.value;
 	
@@ -19,6 +21,7 @@ array_foreach(shakes,function(element,index) {
 		with(target) { dt_draw_x = 0; dt_draw_y = 0; }
 		array_delete(shakes,index,1);
 	}
+	index -= 1;
 });
 
 if (shake_display_value > 0)
