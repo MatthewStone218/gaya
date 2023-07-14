@@ -8,9 +8,9 @@ function particle(count,colour,scale){
 		with(ins)
 		{
 			color = colour;
-			scale = scale;
+			radius = scale;
 			direction = irandom(359);
-			speed = random_range(3,7);
+			speed = random_range(7,12);
 		}
 	}
 }
