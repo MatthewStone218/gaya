@@ -65,6 +65,7 @@
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_enemy_boss","path":"objects/obj_enemy_boss/obj_enemy_boss.yy",},},
     {"id":{"name":"obj_entity","path":"objects/obj_entity/obj_entity.yy",},},
+    {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},},
     {"id":{"name":"obj_ef_dust","path":"objects/obj_ef_dust/obj_ef_dust.yy",},},
     {"id":{"name":"obj_relic","path":"objects/obj_relic/obj_relic.yy",},},
     {"id":{"name":"draw_pie","path":"scripts/draw_pie/draw_pie.yy",},},

@@ -16,6 +16,7 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"game","order":1,"path":"folders/Sprites/game.yy",},
     {"name":"ef","order":6,"path":"folders/Sprites/game/ef.yy",},
     {"name":"enemy","order":3,"path":"folders/Sprites/game/enemy.yy",},
     {"name":"player","order":2,"path":"folders/Sprites/game/player.yy",},
