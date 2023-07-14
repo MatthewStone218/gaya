@@ -103,6 +103,7 @@
     {"id":{"name":"obj_enemy_3","path":"objects/obj_enemy_3/obj_enemy_3.yy",},},
     {"id":{"name":"spr_dust","path":"sprites/spr_dust/spr_dust.yy",},},
     {"id":{"name":"obj_ef_hit","path":"objects/obj_ef_hit/obj_ef_hit.yy",},},
+    {"id":{"name":"bg_stage","path":"sprites/bg_stage/bg_stage.yy",},},
     {"id":{"name":"spr_enemy_2_attack","path":"sprites/spr_enemy_2_attack/spr_enemy_2_attack.yy",},},
     {"id":{"name":"rm_game_3","path":"rooms/rm_game_3/rm_game_3.yy",},},
     {"id":{"name":"obj_drawer","path":"objects/obj_drawer/obj_drawer.yy",},},
