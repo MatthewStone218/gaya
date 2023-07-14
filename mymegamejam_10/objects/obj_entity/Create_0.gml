@@ -14,3 +14,13 @@ function move(_x_dir,_y_dir)
 	x = my_tile.x;
 	y = my_tile.y;
 }
+
+function move_tile(tile)
+{
+	array_delete(my_tile.entitys,array_get_index(my_tile.entitys,id),1);
+	my_tile = tile;
+	array_push(my_tile.entitys,id);
+	///수정 포인트(좌표 설정)
+	x = my_tile.x;
+	y = my_tile.y;
+}
