@@ -1,6 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function game_over(){
-	show_message("Game Over");
-	return;
+	if (global.game_overed) return;
+	show_message_async("Game Over");
+	global.game_overed = true;
+	//return;
 }

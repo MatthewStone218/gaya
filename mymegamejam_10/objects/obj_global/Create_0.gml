@@ -11,3 +11,5 @@ global.upgrades = [
 ];
 
 global.point = 0;
+
+global.game_overed = false;
