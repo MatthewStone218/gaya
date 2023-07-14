@@ -4,15 +4,19 @@
 
 
 tuto_text = "";
+tuto_text_now = "";
+tuto_text_now_index = 0;
+tuto_text_step = 3;
+tuto_text_step_now = 0;
 tuto_text_alpha = 0;
 
 sequence = [
 	function() {
-		tuto_text = "TEST1";
+		tuto_text = "TEST1TEST1TEST1TEST1TEST1TEST1TEST1TEST1TEST1TEST1";
 		tuto_text_alpha = 0;
 	},
 	function() {
-		tuto_text = "TEST2";
+		tuto_text = "TEST2TEST2TEST2TEST2TEST2TEST2TEST2TEST2TEST2TEST2";
 		tuto_text_alpha = 0;
 	},
 ];
@@ -22,6 +26,7 @@ tuto_index = 0;
 function next() {
 	sequence[tuto_index]();
 	tuto_index += 1;
+	tuto_text_now = "";
 }
 
 next();

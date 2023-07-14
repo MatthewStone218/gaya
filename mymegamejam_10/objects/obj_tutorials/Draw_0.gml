@@ -2,7 +2,7 @@
 // 이 에디터에 코드를 작성할 수 있습니다
 
 
-var str = tuto_text;
+var str = tuto_text_now;
 
 	draw_set_alpha((tuto_text_alpha > 0) ? 0.5 : 0);
 	draw_set_colour(c_black);
