@@ -2,6 +2,11 @@
 // You can write your code in this editor
 
 
+if mouse_check_button_pressed(mb_left)
+{
+	prev_mouse_x = mouse_x;
+	prev_mouse_y = mouse_y;
+}
 if mouse_check_button(mb_left)
 {
 	var dt_mouse_x = mouse_x - prev_mouse_x;
