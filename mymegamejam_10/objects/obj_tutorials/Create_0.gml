@@ -48,7 +48,7 @@ function next() {
 next();
 
 function final() {
-	room_goto(rm_game_1);
+	stage_clear();
 }
 
 

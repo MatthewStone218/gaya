@@ -60,6 +60,7 @@
     {"name":"rm_game_0","order":3,"path":"rooms/rm_game_0/rm_game_0.yy",},
     {"name":"rm_main","order":1,"path":"rooms/rm_main/rm_main.yy",},
     {"name":"obj_tutorials","order":7,"path":"objects/obj_tutorials/obj_tutorials.yy",},
+    {"name":"stage_clear","order":6,"path":"scripts/stage_clear/stage_clear.yy",},
     {"name":"obj_enemy_3","order":4,"path":"objects/obj_enemy_3/obj_enemy_3.yy",},
     {"name":"spr_dust","order":1,"path":"sprites/spr_dust/spr_dust.yy",},
     {"name":"spr_enemy_2_attack","order":1,"path":"sprites/spr_enemy_2_attack/spr_enemy_2_attack.yy",},
