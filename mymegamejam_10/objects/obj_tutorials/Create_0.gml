@@ -55,3 +55,4 @@ function final() {
 //일회성 튜토리얼 변수
 key_left = false;
 key_right = false;
+key_x = 0;

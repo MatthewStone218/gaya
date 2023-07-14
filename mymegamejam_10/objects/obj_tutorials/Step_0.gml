@@ -29,6 +29,7 @@ switch(tuto_index) {
 		if !instance_exists(obj_enemy) next();
 		break;
 	case 3:
-		if keyboard_check_pressed(ord("X")) next();
+		if keyboard_check_pressed(ord("X")) key_x += 1;
+		if (key_x >= 2) next();
 		break;
 }
