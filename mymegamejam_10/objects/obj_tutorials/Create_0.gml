@@ -18,6 +18,11 @@ sequence = [
 	function() {
 		tuto_text = "적과 같은 칸에 있으면 ‘Z’를 눌러 적을 공격 할 수 있습니다.";
 		tuto_text_alpha = 0;
+		var tile = noone;
+		with(obj_tile) {
+			if (tile == noone || x < tile.x) tile = id;
+		}
+		instance_create_depth(tile.x,tile.y,obj_player.depth,obj_enemy_1);
 	},
 	function() {
 		tuto_text = "‘X’키를 눌러 빠르게 귀환할 수 있습니다.";
