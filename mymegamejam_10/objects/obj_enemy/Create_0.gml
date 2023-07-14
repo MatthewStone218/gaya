@@ -78,7 +78,7 @@ function attack()
 function damaged(){
 	hp -= obj_player.atk;
 	hit = 8;
-	yscale_ratio = 0.4;
+	yscale_ratio = 0.6;
 	if(hp <= 0)
 	{
 		instance_destroy();

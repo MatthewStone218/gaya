@@ -19,3 +19,6 @@ if (point_distance(x,y,my_tile.x,my_tile.y) <= speed)
 	image_xscale = sign(image_xscale)*1;
 	image_yscale = 1;
 }
+
+dt_draw_x_2 += (dt_draw_x_2_target-dt_draw_x_2)/3;
+dt_draw_y_2 += (dt_draw_y_2_target-dt_draw_y_2)/3;
