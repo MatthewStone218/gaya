@@ -2,13 +2,16 @@
 // You can write your code in this editor
 
 
-var dt_mouse_x = mouse_x - prev_mouse_x;
-if (abs(dt_mouse_x) >= 1)
+if mouse_check_button(mb_left)
 {
-	with(obj_upgrade_relic) {
-		rotate += dt_mouse_x/2;
+	var dt_mouse_x = mouse_x - prev_mouse_x;
+	if (abs(dt_mouse_x) >= 1)
+	{
+		with(obj_upgrade_relic) {
+			rotate += dt_mouse_x/2;
+		}
 	}
-}
 
-prev_mouse_x = mouse_x;
-prev_mouse_y = mouse_y;
+	prev_mouse_x = mouse_x;
+	prev_mouse_y = mouse_y;
+}
