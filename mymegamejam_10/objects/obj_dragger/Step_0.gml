@@ -10,7 +10,7 @@ if mouse_check_button_pressed(mb_left)
 if mouse_check_button(mb_left)
 {
 	var dt_mouse_x = mouse_x - prev_mouse_x;
-	if (abs(dt_mouse_x) >= 1)
+	if (abs(dt_mouse_x) >= 3)
 	{
 		with(obj_upgrade_relic) {
 			rotate += dt_mouse_x/4;
