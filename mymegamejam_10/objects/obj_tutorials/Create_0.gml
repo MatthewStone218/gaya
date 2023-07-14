@@ -27,6 +27,7 @@ function next() {
 	
 	if (tuto_index >= array_length(sequence)) {
 		final();
+		return;
 	}
 	
 	sequence[tuto_index]();
