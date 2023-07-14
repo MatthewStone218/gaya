@@ -16,6 +16,6 @@ if position_meeting(mouse_x,mouse_y,id)
 }
 
 x = room_width/2 + lengthdir_x(480,rotate);
-y = room_height/2 + lengthdir_y(240,rotate);
+y = room_height/2 + lengthdir_y(120,rotate);
 
 depth = -y;
