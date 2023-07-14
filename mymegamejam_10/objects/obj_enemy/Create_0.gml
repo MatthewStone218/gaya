@@ -4,7 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-hp = 1;
+max_hp = 1;
+hp = max_hp;
 atk = 1;
 
 hit = 0;

@@ -12,3 +12,11 @@ else
 {
 	draw_sprite_ext(sprite_index,image_index,x+dt_draw_x+dt_draw_x_2,y+dt_draw_y+dt_draw_y_2,image_xscale*x_dir,image_yscale,image_angle,image_blend,image_alpha);
 }
+
+var bar_w = abs(sprite_width);
+var bar_h = 6;
+var ratio = hp/max_hp;
+draw_set_color(c_dkgray);
+draw_rectangle(x-bar_w/2,y-bar_h/2,x+bar_w/2,y+bar_h/2,false);
+draw_set_color(c_red);
+draw_rectangle(x-bar_w/2,y-bar_h/2,x-bar_w/2+bar_w*ratio,y+bar_h/2,false);
