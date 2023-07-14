@@ -4,53 +4,83 @@
 // Inherit the parent event
 event_inherited();
 
+hp = 1;
+atk = 1;
+
+hit = 0;
+yscale_ratio = 1;
+
 function advance(target = obj_relic)
 {
-	var _range = 0;//조건에 맞고 가장 목표와 가까운 n+1개의 타일 중에 하나로 이동
-	
-	var _list = ds_list_create();
-	collision_circle_list(x,y,global.tile_width,obj_tile,0,0,_list,0);
-	
-	ds_list_delete(_list,ds_list_find_index(_list,my_tile));
-	
-	for(var i = 0; i < ds_list_size(_list); i++)
+	if(point_distance(x,y,target.x,target.y) <= global.tile_width+3)
 	{
-		if(point_distance(x,y,target.x,target.y) < point_distance(_list[|i].x,_list[|i].y,target.x,target.y))
-		{
-			ds_list_delete(_list,i);
-			i--;
-		}
+		attack();
 	}
-	
-	
-	for(var i = 0; i < ds_list_size(_list); i++)
+	else
 	{
-		var _sm_num = 0;
-		var _sm = 1000000;
-		for(var ii = i; ii < ds_list_size(_list); ii++)
+		var _range = 0;//조건에 맞고 가장 목표와 가까운 n+1개의 타일 중에 하나로 이동
+	
+		var _list = ds_list_create();
+		collision_circle_list(x,y,global.tile_width,obj_tile,0,0,_list,0);
+	
+		ds_list_delete(_list,ds_list_find_index(_list,my_tile));
+	
+		for(var i = 0; i < ds_list_size(_list); i++)
 		{
-			var _dis = point_distance(_list[|ii].x,_list[|ii].y,target.x,target.y);
-			if(_sm > _dis)
+			if(point_distance(x,y,target.x,target.y) < point_distance(_list[|i].x,_list[|i].y,target.x,target.y))
 			{
-				_sm = _dis;
-				_sm_num = ii;
+				ds_list_delete(_list,i);
+				i--;
 			}
 		}
+	
+	
+		for(var i = 0; i < ds_list_size(_list); i++)
+		{
+			var _sm_num = 0;
+			var _sm = 1000000;
+			for(var ii = i; ii < ds_list_size(_list); ii++)
+			{
+				var _dis = point_distance(_list[|ii].x,_list[|ii].y,target.x,target.y);
+				if(_sm > _dis)
+				{
+					_sm = _dis;
+					_sm_num = ii;
+				}
+			}
 		
-		var temp = _list[|i];
-		_list[|i] = _list[|_sm_num];
-		_list[|_sm_num] = temp;
-	}
+			var temp = _list[|i];
+			_list[|i] = _list[|_sm_num];
+			_list[|_sm_num] = temp;
+		}
 	
-	for(var i = 3; i < ds_list_size(_list); i++)
+		for(var i = 3; i < ds_list_size(_list); i++)
+		{
+			ds_list_delete(_list,i);
+		}
+	
+		if(ds_list_size(_list) != 0)
+		{
+			move_tile(_list[|irandom(min(_range,ds_list_size(_list)-1))]);
+		}
+	
+		ds_list_destroy(_list);
+	}
+}
+
+function attack()
+{
+	obj_relic.hp -= atk;
+	obj_relic.hit = 8;
+	if(obj_relic.hp <= 0){game_over();}
+}
+
+function damaged(){
+	hp -= obj_player.atk;
+	hit = 8;
+	yscale_ratio = 0.4;
+	if(hp <= 0)
 	{
-		ds_list_delete(_list,i);
+		instance_destroy();
 	}
-	
-	if(ds_list_size(_list) != 0)
-	{
-		move_tile(_list[|irandom(min(_range,ds_list_size(_list)-1))]);
-	}
-	
-	ds_list_destroy(_list);
 }

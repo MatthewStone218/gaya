@@ -3,12 +3,19 @@
 
 if (speed > 0)
 {
-	if (point_distance(x,y,my_tile.x,my_tile.y) < speed)
+	//image_xscale *= 0.8;
+	//image_yscale *= 0.8;
+	if (point_distance(x,y,my_tile.x,my_tile.y) < dist/2)
 	{
-		speed = 0;
-		x = my_tile.x;
-		y = my_tile.y;
-		image_xscale = o_xscale;
-		image_yscale = o_yscale;
+		gravity = -5;
 	}
+}
+if (point_distance(x,y,my_tile.x,my_tile.y) <= speed)
+{
+	speed = 0;
+	gravity = 0;
+	x = my_tile.x;
+	y = my_tile.y;
+	image_xscale = sign(image_xscale)*1;
+	image_yscale = 1;
 }

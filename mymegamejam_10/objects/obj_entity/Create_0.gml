@@ -11,8 +11,12 @@ function move(_x_dir,_y_dir)
 	my_tile = instance_nearest(x+(global.tile_width-1)*_x_dir,y+(global.tile_width-1)*_y_dir,obj_tile);
 	array_push(my_tile.entitys,id);
 	///수정 포인트(좌표 설정)
-	x = my_tile.x;
-	y = my_tile.y;
+	//x = my_tile.x;
+	//y = my_tile.y;
+	gravity_direction = point_direction(x,y,my_tile.x,my_tile.y);
+	gravity = 5;
+	direction = gravity_direction;
+	speed = gravity;
 }
 
 function move_tile(tile)
@@ -21,10 +25,14 @@ function move_tile(tile)
 	my_tile = tile;
 	array_push(my_tile.entitys,id);
 	///수정 포인트(좌표 설정)
-	x = my_tile.x;
-	y = my_tile.y;
+	//x = my_tile.x;
+	//y = my_tile.y;
+	gravity_direction = point_direction(x,y,my_tile.x,my_tile.y);
+	gravity = 5;
+	direction = gravity_direction;
+	speed = gravity;
 }
 
-//드로우 시 델타 x, y
 dt_draw_x = 0;
 dt_draw_y = 0;
+dist = 0;

@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player_right_attack",
-    "path": "sprites/spr_player_right_attack/spr_player_right_attack.yy",
+    "name": "spr_enemy_1",
+    "path": "sprites/spr_enemy_1/spr_enemy_1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

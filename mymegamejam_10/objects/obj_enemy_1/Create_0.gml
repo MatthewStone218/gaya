@@ -2,4 +2,6 @@
 // You can write your code in this editor
 event_inherited();
 
-_alarm = 30;
+hp = 20;
+
+_alarm = 300;

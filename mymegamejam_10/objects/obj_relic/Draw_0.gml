@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
+
+if(hit > 0)
+{
+	shader_set(shd_white);
+	draw_self();
+	shader_reset();
+}
+else
+{
+	draw_self();
+}
 
 var _w = 200;
 var _h = 40;
