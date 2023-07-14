@@ -19,7 +19,7 @@ draw_title(960,110,str,c_white);
 
 var _w = 460;
 var _h = 30;
-var _margin = 50;
+var _margin = 52;
 
 var colour = (hit > 0) ? c_blue : c_red;
 
