@@ -10,7 +10,7 @@ yscale_ratio += (1-yscale_ratio)/2;
 
 if (hp_previous != hp)
 {
-	var _dir = point_direction(obj_player.x,obj_player.y,x,y);
+	var _dir = (sign(obj_player.x_dir) == -1) ? 180 : 0;
 	particle(hp_previous-hp,c_white,random_range(3,5),_dir);
 }
 
