@@ -28,10 +28,10 @@ if (shake_display_value > 0)
 	var view_y = camera_get_view_y(cam);
 	var dt_view_x = lengthdir_x(shake_display_value,irandom(359));
 	var dt_view_y = lengthdir_y(shake_display_value,irandom(359));
-	camera_set_view_pos(cam,view_x+dt_view_x,view_y+dt_view_y);
+	camera_set_view_pos(cam,dt_view_x,dt_view_y);
 	
 	shake_display_value -= 1;
 	if (shake_display_value <= 0) {
-		camera_set_view_pos(cam,view_x,view_y);
+		camera_set_view_pos(cam,0,0);
 	}
 }
