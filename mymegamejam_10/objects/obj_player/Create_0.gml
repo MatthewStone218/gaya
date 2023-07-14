@@ -63,3 +63,20 @@ function hit_enemy()
 
 return_now_cooldown = 0;
 return_cooldown = room_speed*2;
+
+
+///유물을 통한 스탯 강화
+array_foreach(global.upgrades,function(element,index){
+	if (element >= 1)
+	{
+		switch(index) {
+			default:	break;
+			case 0: //검
+				atk += 1*element;
+				break;
+			case 1: //팔찌
+				attack_delay *= power(0.8,element);
+				break;
+		}
+	}
+});

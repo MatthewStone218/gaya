@@ -69,19 +69,3 @@ if(keyboard_check_pressed(ord("X"))){
 yscale_ratio += (1-yscale_ratio)/4;
 
 depth = -(y+dt_draw_y+dt_draw_y_2+100);
-
-///유물을 통한 스탯 강화
-array_foreach(global.upgrades,function(element,index){
-	if (element >= 1)
-	{
-		switch(index) {
-			default:	break;
-			case 0: //검
-				atk += 1*element;
-				break;
-			case 1: //팔찌
-				attack_delay *= power(0.8,element);
-				break;
-		}
-	}
-});
