@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var str = "BOSS";
+var str_w = string_width(str);
+var str_h = string_height(str);
+draw_set_color(c_dkgray);
+draw_roundrect(960-str_w/2-16,110-str_h/2-8,960+str_w/2+16,110+str_h/2+8,false);
+draw_title(960,110,str,c_white);
+
+//
 
 var _w = 460;
 var _h = 30;
@@ -13,10 +21,3 @@ draw_roundrect(960-_w/2,0+_margin,960+_w/2,0+_margin+_h,false);
 
 draw_set_color(colour);
 draw_roundrect(960-_w/2,0+_margin,960-_w/2 + _w*(hp/max_hp),0+_margin+_h,false);
-
-var str = "BOSS";
-var str_w = string_width(str);
-var str_h = string_height(str);
-draw_set_color(c_dkgray);
-draw_roundrect(960-str_w/2-16,110-str_h/2-8,960+str_w/2+16,110+str_h/2+8,false);
-draw_title(960,110,str,c_white);
