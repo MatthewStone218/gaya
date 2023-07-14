@@ -6,3 +6,5 @@ hp = hp_max;
 hit = 0;
 
 global.relic_tile = instance_nearest(x,y,obj_tile);
+
+hp_previous = hp;
