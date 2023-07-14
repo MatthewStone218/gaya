@@ -1,5 +1,4 @@
 /// @description Insert description here
-// You can write your code in this editor
 
 //var str = "게임을 시작하려면 SPACE를 누르세요.";
 
