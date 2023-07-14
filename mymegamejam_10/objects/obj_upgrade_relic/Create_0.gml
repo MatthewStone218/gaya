@@ -14,6 +14,6 @@ image_speed = 0;
 image_index = my_index;
 
 //초기 rotate, x, y
-rotate = 360/instance_number(object_index)*my_index;
+rotate = 360/instance_number(object_index)*my_index - 15;
 x = room_width/2 + lengthdir_x(480,rotate);
 y = room_height/2 + lengthdir_y(240,rotate);
