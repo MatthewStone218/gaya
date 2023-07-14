@@ -113,6 +113,7 @@
     {"id":{"name":"rm_game_3","path":"rooms/rm_game_3/rm_game_3.yy",},},
     {"id":{"name":"obj_drawer","path":"objects/obj_drawer/obj_drawer.yy",},},
     {"id":{"name":"game_over","path":"scripts/game_over/game_over.yy",},},
+    {"id":{"name":"spr_arrow_boss","path":"sprites/spr_arrow_boss/spr_arrow_boss.yy",},},
     {"id":{"name":"spr_enemy_1","path":"sprites/spr_enemy_1/spr_enemy_1.yy",},},
   ],
   "RoomOrderNodes": [

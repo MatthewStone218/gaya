@@ -72,5 +72,6 @@
     {"name":"spr_enemy_2_attack","order":1,"path":"sprites/spr_enemy_2_attack/spr_enemy_2_attack.yy",},
     {"name":"rm_game_3","order":6,"path":"rooms/rm_game_3/rm_game_3.yy",},
     {"name":"obj_drawer","order":1,"path":"objects/obj_drawer/obj_drawer.yy",},
+    {"name":"spr_arrow_boss","order":3,"path":"sprites/spr_arrow_boss/spr_arrow_boss.yy",},
   ],
 }
