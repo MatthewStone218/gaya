@@ -7,6 +7,7 @@ var ratio = (hp/max_hp);
 var str = "BOSS";
 var str_w = string_width(str);
 var str_h = string_height(str);
+	var str_w = 460; //
 var colour = (hit > 0) ? c_blue : c_red;
 draw_set_color(c_dkgray);
 draw_roundrect(960-str_w/2-16,110-str_h/2-8,960+str_w/2+16,110+str_h/2+8,false);
