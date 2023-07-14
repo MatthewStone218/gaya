@@ -6,3 +6,9 @@ event_inherited();
 
 if(hit > 0){hit--;}
 yscale_ratio += (1-yscale_ratio)/2;
+
+
+if (hp_previous != hp)
+{
+	particle(hp_previous-hp,c_white,random_range(3,5));
+}
