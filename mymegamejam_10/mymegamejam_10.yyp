@@ -81,6 +81,7 @@
     {"id":{"name":"spr_enemy_boss_attack","path":"sprites/spr_enemy_boss_attack/spr_enemy_boss_attack.yy",},},
     {"id":{"name":"bg_main","path":"sprites/bg_main/bg_main.yy",},},
     {"id":{"name":"rm_stage","path":"rooms/rm_stage/rm_stage.yy",},},
+    {"id":{"name":"obj_stage_btn","path":"objects/obj_stage_btn/obj_stage_btn.yy",},},
     {"id":{"name":"draw_info","path":"scripts/draw_info/draw_info.yy",},},
     {"id":{"name":"spr_enemy_2","path":"sprites/spr_enemy_2/spr_enemy_2.yy",},},
     {"id":{"name":"shd_white","path":"shaders/shd_white/shd_white.yy",},},
