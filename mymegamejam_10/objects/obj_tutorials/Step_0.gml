@@ -25,4 +25,7 @@ switch(tuto_index) {
 		if keyboard_check_pressed(vk_right) key_right = true;
 		if (key_left && key_right) next();
 		break;
+	case 2:
+		if !instance_exists(obj_enemy) next();
+		break;
 }
