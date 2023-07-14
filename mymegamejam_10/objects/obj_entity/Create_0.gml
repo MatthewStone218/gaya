@@ -24,3 +24,7 @@ function move_tile(tile)
 	x = my_tile.x;
 	y = my_tile.y;
 }
+
+//드로우 시 델타 x, y
+dt_draw_x = 0;
+dt_draw_y = 0;
