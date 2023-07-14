@@ -9,7 +9,7 @@ hp = max_hp;
 atk = 1;
 
 hit = 0;
-yscale_ratio = 1;
+yscale_ratio = 1.4;
 
 attacking = 0;
 
