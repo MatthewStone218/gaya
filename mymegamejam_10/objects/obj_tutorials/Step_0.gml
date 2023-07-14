@@ -12,7 +12,7 @@ tuto_text_step_now += 1;
 if (tuto_text_step_now >= tuto_text_step)
 {
 	tuto_text_step_now = 0;
-	tuto_text_now_index += 1;
+	tuto_text_now_index += irandom_range(1,3);
 		tuto_text_now_index = min(tuto_text_now_index,string_length(tuto_text));
 	tuto_text_now = string_copy(tuto_text,1,tuto_text_now_index);
 }

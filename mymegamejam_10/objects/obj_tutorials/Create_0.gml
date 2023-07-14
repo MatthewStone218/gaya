@@ -27,6 +27,7 @@ function next() {
 	sequence[tuto_index]();
 	tuto_index += 1;
 	tuto_text_now = "";
+	tuto_text_now_index = 0;
 }
 
 next();
