@@ -15,4 +15,4 @@ else
 
 
 draw_set_colour(c_red);
-draw_arrow(x+dt_draw_x+dt_draw_x_2,y+dt_draw_y+dt_draw_y_2-abs(sprite_height/2)-8-6,x+dt_draw_x+dt_draw_x_2,y+dt_draw_y+dt_draw_y_2-abs(sprite_height/2)-8,10);
+draw_arrow(x+dt_draw_x+dt_draw_x_2,y+dt_draw_y+dt_draw_y_2-abs(sprite_height/2)-8-16,x+dt_draw_x+dt_draw_x_2,y+dt_draw_y+dt_draw_y_2-abs(sprite_height/2)-8,24);
