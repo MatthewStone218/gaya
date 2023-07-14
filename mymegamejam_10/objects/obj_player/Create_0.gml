@@ -39,9 +39,9 @@ function hit_enemy()
 
 	for(var i = 0; i < ds_list_size(_list); i++)
 	{
-		if(attacked_enemys[$ "_"+string(other.id)] != 1)
+		if(attacked_enemys[$ "_"+string(_list[|i])] != 1)
 		{
-			attacked_enemys[$ "_"+string(other.id)] = 1;
+			attacked_enemys[$ "_"+string(_list[|i])] = 1;
 			with(_list[|i]){damaged();}
 		}
 	}

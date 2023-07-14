@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(!variable_instance_exists(id,"entitys"))
+
+event_inherited()
+
+if(_alarm <= 0)
 {
-	entitys = [];
+	advance();
+	_alarm = 75;
+}
+else
+{
+	_alarm--;
 }
