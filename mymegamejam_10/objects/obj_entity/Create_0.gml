@@ -23,7 +23,7 @@ function set_position()
 	{
 		if(x < my_tile.x)
 		{
-			dt_draw_x_2_target = -30;
+			dt_draw_x_2_target = -24;
 			x_dir = 1;
 			for(var i = 0; i < array_length(my_tile.entitys); i++)
 			{
@@ -32,37 +32,37 @@ function set_position()
 			
 			if(array_length(my_tile.entitys) == 1)
 			{
-				my_tile.entitys[0].dt_draw_x_2_target = 30;
+				my_tile.entitys[0].dt_draw_x_2_target = 24;
 				my_tile.entitys[0].dt_draw_y_2_target = 0;
 			}
 			else if(array_length(my_tile.entitys) == 2)
 			{
-				my_tile.entitys[0].dt_draw_x_2_target = 30;
-				my_tile.entitys[1].dt_draw_x_2_target = 30;
+				my_tile.entitys[0].dt_draw_x_2_target = 24;
+				my_tile.entitys[1].dt_draw_x_2_target = 24;
 				if(my_tile.entitys[0].dt_draw_y_2 < my_tile.entitys[1].dt_draw_y_2)
 				{
-					my_tile.entitys[0].dt_draw_y_2_target = -30;
-					my_tile.entitys[1].dt_draw_y_2_target = 30;
+					my_tile.entitys[0].dt_draw_y_2_target = -24;
+					my_tile.entitys[1].dt_draw_y_2_target = 24;
 				}
 				else
 				{
 
-					my_tile.entitys[0].dt_draw_y_2_target = 30;
-					my_tile.entitys[1].dt_draw_y_2_target = -30;
+					my_tile.entitys[0].dt_draw_y_2_target = 24;
+					my_tile.entitys[1].dt_draw_y_2_target = -24;
 				}
 			}
 			else
 			{
 				for(var i = 0; i < array_length(my_tile.entitys); i++)
 				{
-					my_tile.entitys[i].dt_draw_x_2_target = random_range(-30,30);
-					my_tile.entitys[i].dt_draw_y_2_target = random_range(-30,30);
+					my_tile.entitys[i].dt_draw_x_2_target = random_range(-24,24);
+					my_tile.entitys[i].dt_draw_y_2_target = random_range(-24,24);
 				}
 			}
 		}
 		else if(x > my_tile.x)
 		{
-			dt_draw_x_2_target = 30;
+			dt_draw_x_2_target = 24;
 			
 			x_dir = -1;
 			for(var i = 0; i < array_length(my_tile.entitys); i++)
@@ -72,42 +72,42 @@ function set_position()
 			
 			if(array_length(my_tile.entitys) == 1)
 			{
-				my_tile.entitys[0].dt_draw_x_2_target = -30;
+				my_tile.entitys[0].dt_draw_x_2_target = -24;
 				my_tile.entitys[0].dt_draw_y_2_target = 0;
 			}
 			else if(array_length(my_tile.entitys) == 2)
 			{
-				my_tile.entitys[0].dt_draw_x_2_target = -30;
-				my_tile.entitys[1].dt_draw_x_2_target = -30;
+				my_tile.entitys[0].dt_draw_x_2_target = -24;
+				my_tile.entitys[1].dt_draw_x_2_target = -24;
 				if(my_tile.entitys[0].dt_draw_y_2 < my_tile.entitys[1].dt_draw_y)
 				{
-					my_tile.entitys[0].dt_draw_y_2_target = -30;
-					my_tile.entitys[1].dt_draw_y_2_target = 30;
+					my_tile.entitys[0].dt_draw_y_2_target = -24;
+					my_tile.entitys[1].dt_draw_y_2_target = 24;
 				}
 				else
 				{
 
-					my_tile.entitys[0].dt_draw_y_2_target = 30;
-					my_tile.entitys[1].dt_draw_y_2_target = -30;
+					my_tile.entitys[0].dt_draw_y_2_target = 24;
+					my_tile.entitys[1].dt_draw_y_2_target = -24;
 				}
 			}
 			else
 			{
 				for(var i = 0; i < array_length(my_tile.entitys); i++)
 				{
-					my_tile.entitys[i].dt_draw_x_2_target = random_range(-30,30);
-					my_tile.entitys[i].dt_draw_y_2_target = random_range(-30,30);
+					my_tile.entitys[i].dt_draw_x_2_target = random_range(-24,24);
+					my_tile.entitys[i].dt_draw_y_2_target = random_range(-24,24);
 				}
 			}
 		}
 		else
 		{
-			dt_draw_x_2_target = -30*x_dir;
+			dt_draw_x_2_target = -24*x_dir;
 			
 			for(var i = 0; i < array_length(my_tile.entitys); i++)
 			{
 				my_tile.entitys[i].x_dir = x_dir*-1;
-				my_tile.entitys[i].dt_draw_x_2_target = 30*x_dir;
+				my_tile.entitys[i].dt_draw_x_2_target = 24*x_dir;
 			}
 			
 			if(array_length(my_tile.entitys) == 1)
@@ -118,21 +118,21 @@ function set_position()
 			{
 				if(my_tile.entitys[0].dt_draw_y_2 > my_tile.entitys[1].dt_draw_y_2)
 				{
-					my_tile.entitys[0].dt_draw_y_2_target = 30;
-					my_tile.entitys[1].dt_draw_y_2_target = -30;
+					my_tile.entitys[0].dt_draw_y_2_target = 24;
+					my_tile.entitys[1].dt_draw_y_2_target = -24;
 				}
 				else
 				{
-					my_tile.entitys[0].dt_draw_y_2_target = -30;
-					my_tile.entitys[1].dt_draw_y_2_target = 30;
+					my_tile.entitys[0].dt_draw_y_2_target = -24;
+					my_tile.entitys[1].dt_draw_y_2_target = 24;
 				}
 			}
 			else
 			{
 				for(var i = 0; i < array_length(my_tile.entitys); i++)
 				{
-					my_tile.entitys[i].dt_draw_x_2_target = random_range(-30,30);
-					my_tile.entitys[i].dt_draw_y_2_target = random_range(-30,30);
+					my_tile.entitys[i].dt_draw_x_2_target = random_range(-24,24);
+					my_tile.entitys[i].dt_draw_y_2_target = random_range(-24,24);
 				}
 			}
 		}
@@ -143,9 +143,9 @@ function set_position()
 		{
 			if(obj_player.x_dir == 1)
 			{
-				obj_player.dt_draw_x_2_target = -30;
+				obj_player.dt_draw_x_2_target = -24;
 				obj_player.dt_draw_y_2_target = 0;
-				dt_draw_x_2_target = 30;
+				dt_draw_x_2_target = 24;
 				if(array_length(my_tile.entitys) == 2)
 				{
 					var incy = my_tile.entitys[0];
@@ -154,16 +154,16 @@ function set_position()
 						incy = my_tile.entitys[1];
 					}
 					
-					incy.dt_draw_x_2_target = 30;
+					incy.dt_draw_x_2_target = 24;
 					if(incy.dt_draw_y_2 < dt_draw_y_2)
 					{
-						incy.dt_draw_y_2_target = -30;
-						dt_draw_y_2_target = 30;
+						incy.dt_draw_y_2_target = -24;
+						dt_draw_y_2_target = 24;
 					}
 					else
 					{
-						incy.dt_draw_y_2_target = 30;
-						dt_draw_y_2_target = -30;
+						incy.dt_draw_y_2_target = 24;
+						dt_draw_y_2_target = -24;
 					}
 				}
 				else if(array_length(my_tile.entitys) < 2)
@@ -174,16 +174,16 @@ function set_position()
 				{
 					for(var i = 0; i < array_length(my_tile.entitys); i++)
 					{
-						my_tile.entitys[i].dt_draw_x_2_target = random_range(-30,30);
-						my_tile.entitys[i].dt_draw_y_2_target = random_range(-30,30);
+						my_tile.entitys[i].dt_draw_x_2_target = random_range(-24,24);
+						my_tile.entitys[i].dt_draw_y_2_target = random_range(-24,24);
 					}
 				}
 			}//안아줘요
 			else
 			{
-				obj_player.dt_draw_x_2_target = 30;
+				obj_player.dt_draw_x_2_target = 24;
 				obj_player.dt_draw_y_2_target = 0;
-				dt_draw_x_2_target = -30;
+				dt_draw_x_2_target = -24;
 				if(array_length(my_tile.entitys) >= 2)
 				{
 					var incy = my_tile.entitys[0];
@@ -192,16 +192,16 @@ function set_position()
 						incy = my_tile.entitys[1];
 					}
 					
-					incy.dt_draw_x_2_target = -30;
+					incy.dt_draw_x_2_target = -24;
 					if(incy.dt_draw_y_2 > dt_draw_y_2)
 					{
-						incy.dt_draw_y_2_target = 30;
-						dt_draw_y_2_target = -30;
+						incy.dt_draw_y_2_target = 24;
+						dt_draw_y_2_target = -24;
 					}
 					else
 					{
-						incy.dt_draw_y_2_target = -30;
-						dt_draw_y_2_target = 30;
+						incy.dt_draw_y_2_target = -24;
+						dt_draw_y_2_target = 24;
 					}
 				}
 				else if(array_length(my_tile.entitys) < 2)
@@ -212,8 +212,8 @@ function set_position()
 				{
 					for(var i = 0; i < array_length(my_tile.entitys); i++)
 					{
-						my_tile.entitys[i].dt_draw_x_2_target = random_range(-30,30);
-						my_tile.entitys[i].dt_draw_y_2_target = random_range(-30,30);
+						my_tile.entitys[i].dt_draw_x_2_target = random_range(-24,24);
+						my_tile.entitys[i].dt_draw_y_2_target = random_range(-24,24);
 					}
 				}
 			}
@@ -227,30 +227,30 @@ function set_position()
 				case 1:
 					if(x > my_tile.entitys[0].x)
 					{
-						my_tile.entitys[0].dt_draw_x_2_target = -30;
+						my_tile.entitys[0].dt_draw_x_2_target = -24;
 						my_tile.entitys[0].dt_draw_y_2_target = 0;
-						dt_draw_x_2_target = 30;
+						dt_draw_x_2_target = 24;
 						dt_draw_y_2_target = 0;
 					}
 					else
 					{
-						my_tile.entitys[0].dt_draw_x_2_target = 30;
+						my_tile.entitys[0].dt_draw_x_2_target = 24;
 						my_tile.entitys[0].dt_draw_y_2_target = 0;
-						dt_draw_x_2_target = -30;
+						dt_draw_x_2_target = -24;
 						dt_draw_y_2_target = 0;
 					}
 				break;
 				default:
 					for(var i = 0; i < array_length(my_tile.entitys); i++)
 					{
-						my_tile.entitys[i].dt_draw_x_2_target = random_range(-30,30);
-						my_tile.entitys[i].dt_draw_y_2_target = random_range(-30,30);
+						my_tile.entitys[i].dt_draw_x_2_target = random_range(-24,24);
+						my_tile.entitys[i].dt_draw_y_2_target = random_range(-24,24);
 					}
 				break;
 			}
 		}
 	}
-}
+}//안아줘요
 
 function move(_x_dir,_y_dir)
 {

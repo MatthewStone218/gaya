@@ -9,7 +9,11 @@ var _y_dir = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 
 if(_x_dir != 0 or _y_dir != 0){
 	move(_x_dir,_y_dir);
-	particle(1,c_white,random_range(9,9),point_direction(0,0,-_x_dir,-_y_dir));
+	
+	var incy = instance_create_depth(x,y+30,depth,obj_ef_dust);
+	incy.speed = 3;
+	incy.direction = 180+point_direction(0,0,_x_dir,_y_dir);
+	//particle(1,c_white,random_range(9,9),point_direction(0,0,-_x_dir,-_y_dir));
 }
 
 
@@ -17,7 +21,7 @@ if(_x_dir != 0 or _y_dir != 0){
 
 if(keyboard_check_pressed(ord("A"))){attack_input_time = 20;}
 
-if(attack_input_time >= 0)
+if(attack_input_time > 0)
 {
 	attack_input_time = 0;
 	attack();
@@ -54,7 +58,7 @@ if(keyboard_check_pressed(ord("S"))){
 		{
 			if (median(target_tile.x,x,other.x) == x)
 			and (median(target_tile.y,y,other.y) == y) {
-				particle(1,c_white,random_range(9,9),_dir);
+				//particle(1,c_white,random_range(9,9),_dir);
 			}
 		}
 	}

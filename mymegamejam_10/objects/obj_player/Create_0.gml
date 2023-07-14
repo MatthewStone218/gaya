@@ -15,8 +15,6 @@ attack_delay_alarm = 0;
 attack_input_time = 0;
 attacked_enemys = {};
 
-sprite_index = spr_player_right;
-
 function attack()
 {	
 	attacked_enemys = {};
@@ -42,7 +40,19 @@ function hit_enemy()
 		if(attacked_enemys[$ "_"+string(_list[|i])] != 1)
 		{
 			attacked_enemys[$ "_"+string(_list[|i])] = 1;
-			with(_list[|i]){damaged();}
+			with(_list[|i])
+			{
+				damaged();
+				repeat(4)
+				{
+					var incy = instance_create_depth(x+random(30)-15,y+random(30)-15,-10000,obj_ef_hit);
+					incy.speed = 18;
+					incy.a = -1;
+					incy.alpha_spd = -0.02;
+					incy.scale_spd = -0.05;
+					incy.direction = 180*(other.x_dir*-1+1)/2+random_range(-25,25);
+				}
+			}
 		}
 	}
 
