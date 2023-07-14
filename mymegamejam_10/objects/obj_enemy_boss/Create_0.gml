@@ -6,8 +6,8 @@ atk = 10;
 max_hp = 40;
 hp = max_hp;
 
-spr_normal = spr_enemy_3;
-spr_attack = spr_enemy_3_attack;
+spr_normal = spr_enemy_boss;
+spr_attack = spr_enemy_boss_attack;
 
 attack_frame = 14;
 attack_frame_end = 18;
