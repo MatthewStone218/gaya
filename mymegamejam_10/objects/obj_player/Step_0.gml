@@ -43,9 +43,19 @@ if (return_now_cooldown > 0) { return_now_cooldown -= 1; }
 if(keyboard_check_pressed(ord("S"))){
 	if (return_now_cooldown == 0)
 	{
+		var target_tile = global.relic_tile;
 		return_now_cooldown = return_cooldown;
-		move_tile(global.relic_tile);
+		move_tile(target_tile);
 		gravity = 20;
 		speed = 20;
+		
+		var _dir = point_direction(x,y,target_tile.x,target_tile.y);
+		with(obj_tile)
+		{
+			if (median(target_tile.x,x,other.x) == x)
+			and (median(target_tile,y,y,other.y) == y) {
+				particle(1,c_white,random_range(9,9),_dir);
+			}
+		}
 	}
 }
