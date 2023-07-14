@@ -48,3 +48,6 @@ function hit_enemy()
 
 	ds_list_destroy(_list);
 }
+
+return_now_cooldown = 0;
+return_cooldown = room_speed*2;

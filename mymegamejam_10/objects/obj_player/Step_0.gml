@@ -32,3 +32,16 @@ attack_input_time--;
 
 
 attack_delay_alarm--;
+
+
+///귀환
+if (return_now_cooldown > 0) { return_now_cooldown -= 1; }
+if(keyboard_check_pressed(ord("S"))){
+	if (return_now_cooldown == 0)
+	{
+		return_now_cooldown = return_cooldown;
+		move_tile(global.relic_tile);
+		gravity = 20;
+		speed = 20;
+	}
+}
