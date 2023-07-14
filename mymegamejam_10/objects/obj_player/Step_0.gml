@@ -53,7 +53,7 @@ if(keyboard_check_pressed(ord("S"))){
 		with(obj_tile)
 		{
 			if (median(target_tile.x,x,other.x) == x)
-			and (median(target_tile,y,y,other.y) == y) {
+			and (median(target_tile.y,y,other.y) == y) {
 				particle(1,c_white,random_range(9,9),_dir);
 			}
 		}
