@@ -109,6 +109,7 @@
     {"id":{"name":"bg_stage","path":"sprites/bg_stage/bg_stage.yy",},},
     {"id":{"name":"spr_enemy_2_attack","path":"sprites/spr_enemy_2_attack/spr_enemy_2_attack.yy",},},
     {"id":{"name":"rm_game_3","path":"rooms/rm_game_3/rm_game_3.yy",},},
+    {"id":{"name":"obj_exit_btn","path":"objects/obj_exit_btn/obj_exit_btn.yy",},},
     {"id":{"name":"obj_drawer","path":"objects/obj_drawer/obj_drawer.yy",},},
     {"id":{"name":"game_over","path":"scripts/game_over/game_over.yy",},},
     {"id":{"name":"spr_arrow_boss","path":"sprites/spr_arrow_boss/spr_arrow_boss.yy",},},

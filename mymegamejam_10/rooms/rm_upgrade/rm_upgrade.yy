@@ -13,6 +13,7 @@
     {"name":"inst_51215D40","path":"rooms/rm_upgrade/rm_upgrade.yy",},
     {"name":"inst_10878514","path":"rooms/rm_upgrade/rm_upgrade.yy",},
     {"name":"inst_44E3F920","path":"rooms/rm_upgrade/rm_upgrade.yy",},
+    {"name":"inst_693EC73A","path":"rooms/rm_upgrade/rm_upgrade.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -23,6 +24,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_51215D40","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_upgrade_relic","path":"objects/obj_upgrade_relic/obj_upgrade_relic.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1269.0,"y":599.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_10878514","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_upgrade_relic","path":"objects/obj_upgrade_relic/obj_upgrade_relic.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1549.0,"y":542.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44E3F920","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dragger","path":"objects/obj_dragger/obj_dragger.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":27.0,"y":133.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_693EC73A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_stage_btn","path":"objects/obj_stage_btn/obj_stage_btn.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":974.0,"y":916.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4283984767,"depth":100,"effectEnabled":true,"effectType":"_filter_fractal_noise","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_FractalNoiseScale","type":0,"value":"309",},
