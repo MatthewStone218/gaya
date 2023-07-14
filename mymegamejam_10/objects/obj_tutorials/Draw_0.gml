@@ -3,7 +3,8 @@
 
 
 var str = tuto_text;
-	draw_set_alpha(0.5);
+
+	draw_set_alpha((tuto_text_alpha >= 0.5) ? 0.5 : 0);
 	draw_set_colour(c_black);
 	var str_w = string_width(str);
 	var str_h = string_height(str);
