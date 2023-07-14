@@ -22,3 +22,5 @@ if (point_distance(x,y,my_tile.x,my_tile.y) <= speed)
 
 dt_draw_x_2 += (dt_draw_x_2_target-dt_draw_x_2)/3;
 dt_draw_y_2 += (dt_draw_y_2_target-dt_draw_y_2)/3;
+
+depth = -(y+dt_draw_y+dt_draw_y_2);

@@ -63,3 +63,5 @@ if(keyboard_check_pressed(ord("S"))){
 		}
 	}
 }
+
+depth = -(y+dt_draw_y+dt_draw_y_2+100);
