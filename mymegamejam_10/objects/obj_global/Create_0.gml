@@ -9,3 +9,5 @@ global.upgrades = [
 	0,
 	0,
 ];
+
+global.point = 0;
