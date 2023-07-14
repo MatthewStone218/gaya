@@ -2,9 +2,9 @@
 // 이 에디터에 코드를 작성할 수 있습니다
 
 
-array_foreach(shakes,function(element,index) 
+array_foreach(shakes,function(element,index) {
 	
-	var target = element.target;{
+	var target = element.target;
 		if !instance_exists(target) exit;
 	var value = element.value;
 	
