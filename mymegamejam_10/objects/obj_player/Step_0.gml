@@ -7,7 +7,11 @@ event_inherited();
 var _x_dir = keyboard_check_pressed(vk_right)-keyboard_check_pressed(vk_left);
 var _y_dir = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 
-if(_x_dir != 0 or _y_dir != 0){move(_x_dir,_y_dir);}
+if(_x_dir != 0 or _y_dir != 0){
+	move(_x_dir,_y_dir);
+	particle(1,c_white,random_range(9,9),point_direction(0,0,-_x_dir,-_y_dir));
+}
+
 
 ///공격
 
