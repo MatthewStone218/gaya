@@ -84,3 +84,11 @@ function damaged(){
 		instance_destroy();
 	}
 }
+
+hp_previous = hp;
+
+if (hp_previous != hp)
+{
+	particle(hp_previous-hp,c_white,random_range(3,5));
+}
+hp_previous = hp;
