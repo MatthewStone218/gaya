@@ -277,6 +277,7 @@ function move(_x_dir,_y_dir)
 
 function move_tile(tile)
 {
+	if(sign(tile.x-x) != 0){x_dir = sign(tile.x-x);}
 	//여기도 건들지 마시오
 	array_delete(my_tile.entitys,array_get_index(my_tile.entitys,id),1);
 	if(array_length(my_tile.entitys) != 0)

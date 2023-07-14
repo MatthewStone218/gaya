@@ -7,11 +7,13 @@ event_inherited();
 if(hit > 0){hit--;}
 yscale_ratio += (1-yscale_ratio)/2;
 
-
-if (hp_previous != hp)
+///공격판정
+if(attacking == 1)
 {
-	var _dir = (sign(obj_player.x_dir) == -1) ? 180 : 0;
-	//particle(hp_previous-hp,c_white,random_range(5,7),_dir);
+	if(image_index >= attack_frame and image_index <= attack_frame_end)
+	{
+		hit_relic();
+	}
 }
 
 hp_previous = hp;

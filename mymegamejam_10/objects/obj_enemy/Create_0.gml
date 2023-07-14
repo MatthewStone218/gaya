@@ -10,6 +10,8 @@ atk = 1;
 hit = 0;
 yscale_ratio = 1;
 
+attacking = 0;
+
 function advance(target = obj_relic)
 {
 	if(point_distance(x,y,target.x,target.y) <= global.tile_width+3)
@@ -70,6 +72,16 @@ function advance(target = obj_relic)
 
 function attack()
 {
+	if(sign(obj_relic.x-x) != 0){x_dir = sign(obj_relic.x-x);}
+	
+	attacking = 1;
+	sprite_index = spr_attack;
+	image_index = 0;
+}
+
+function hit_relic()
+{
+	attacking = 0;
 	obj_relic.hp -= atk;
 	obj_relic.hit = 8;
 	if(obj_relic.hp <= 0){game_over();}

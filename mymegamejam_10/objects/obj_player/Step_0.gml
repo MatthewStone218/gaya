@@ -19,7 +19,7 @@ if(_x_dir != 0 or _y_dir != 0){
 
 ///공격
 
-if(keyboard_check_pressed(ord("A"))){attack_input_time = 20;}
+if(keyboard_check_pressed(ord("Z"))){attack_input_time = 20;}
 
 if(attack_input_time > 0)
 {
@@ -44,7 +44,7 @@ attack_delay_alarm--;
 
 ///귀환
 if (return_now_cooldown > 0) { return_now_cooldown -= 1; }
-if(keyboard_check_pressed(ord("S"))){
+if(keyboard_check_pressed(ord("X"))){
 	if (return_now_cooldown == 0)
 	{
 		var target_tile = global.relic_tile;
