@@ -59,6 +59,7 @@
     {"id":{"name":"spr_relic","path":"sprites/spr_relic/spr_relic.yy",},},
     {"id":{"name":"obj_afterimage","path":"objects/obj_afterimage/obj_afterimage.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
+    {"id":{"name":"draw_info","path":"scripts/draw_info/draw_info.yy",},},
     {"id":{"name":"shd_white","path":"shaders/shd_white/shd_white.yy",},},
     {"id":{"name":"spr_tile","path":"sprites/spr_tile/spr_tile.yy",},},
     {"id":{"name":"obj_ui","path":"objects/obj_ui/obj_ui.yy",},},

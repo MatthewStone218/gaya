@@ -31,6 +31,7 @@
     {"name":"obj_enemy_1","order":1,"path":"objects/obj_enemy_1/obj_enemy_1.yy",},
     {"name":"spr_relic","order":9,"path":"sprites/spr_relic/spr_relic.yy",},
     {"name":"obj_afterimage","order":8,"path":"objects/obj_afterimage/obj_afterimage.yy",},
+    {"name":"draw_info","order":4,"path":"scripts/draw_info/draw_info.yy",},
     {"name":"shd_white","order":1,"path":"shaders/shd_white/shd_white.yy",},
     {"name":"spr_tile","order":11,"path":"sprites/spr_tile/spr_tile.yy",},
     {"name":"obj_ui","order":7,"path":"objects/obj_ui/obj_ui.yy",},

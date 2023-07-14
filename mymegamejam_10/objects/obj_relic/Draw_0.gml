@@ -12,12 +12,14 @@ else
 	draw_self();
 }
 
-var _w = 200;
-var _h = 40;
-var _margin = 15;
+var _w = 1900;
+var _h = 20;
+var _margin = 10;
 
-draw_set_color(c_gray);
-draw_roundrect(x-_w/2,y+sprite_height-sprite_yoffset+_margin,x+_w/2,y+sprite_height-sprite_yoffset+_margin+_h,0);
+var colour = (hit > 0) ? c_red : c_lime;
 
-draw_set_color(c_green);
-draw_roundrect(x-_w/2,y+sprite_height-sprite_yoffset+_margin,x-_w/2 + _w*(hp/hp_max),y+sprite_height-sprite_yoffset+_margin+_h,0);
+draw_set_color(colour);
+draw_roundrect(960-_w/2,0+_margin,960+_w/2,0+_margin+_h,true);
+
+draw_set_color(colour);
+draw_roundrect(960-_w/2,0+_margin,960-_w/2 + _w*(hp/hp_max),0+_margin+_h,false);
