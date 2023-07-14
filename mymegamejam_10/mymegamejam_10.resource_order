@@ -46,6 +46,7 @@
     {"name":"obj_enemy_2","order":2,"path":"objects/obj_enemy_2/obj_enemy_2.yy",},
     {"name":"obj_dragger","order":1,"path":"objects/obj_dragger/obj_dragger.yy",},
     {"name":"spr_enemy_boss_attack","order":1,"path":"sprites/spr_enemy_boss_attack/spr_enemy_boss_attack.yy",},
+    {"name":"obj_goto_upgrade_btn","order":1,"path":"objects/obj_goto_upgrade_btn/obj_goto_upgrade_btn.yy",},
     {"name":"rm_stage","order":8,"path":"rooms/rm_stage/rm_stage.yy",},
     {"name":"draw_info","order":4,"path":"scripts/draw_info/draw_info.yy",},
     {"name":"shd_white","order":1,"path":"shaders/shd_white/shd_white.yy",},
