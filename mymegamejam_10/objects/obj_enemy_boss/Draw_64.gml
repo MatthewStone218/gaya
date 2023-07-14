@@ -10,9 +10,9 @@ var str_h = string_height(str);
 	var str_w = 460; //
 var colour = (hit > 0) ? c_blue : c_red;
 draw_set_color(c_dkgray);
-draw_roundrect(960-str_w/2-16,110-str_h/2-8,960+str_w/2+16,110+str_h/2+8,false);
+draw_roundrect(960-str_w/2,110-str_h/2-8,960+str_w/2,110+str_h/2+8,false);
 draw_set_color(colour);
-draw_roundrect(960-str_w/2-16,110-str_h/2-8,960-str_w/2-16+(str_w+32)*ratio,110+str_h/2+8,false);
+draw_roundrect(960-str_w/2,110-str_h/2-8,960-str_w/2+(str_w)*ratio,110+str_h/2+8,false);
 draw_title(960,110,str,c_white);
 
 //
