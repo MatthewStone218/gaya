@@ -19,3 +19,15 @@ array_foreach(shakes,function(element,index) {
 		array_delete(shakes,index,1);
 	}
 });
+
+if (shake_display_value > 0)
+{
+	cam = view_camera[0];
+	var view_x = camera_get_view_x(cam);
+	var view_y = camera_get_view_y(cam);
+	var dt_view_x = lengthdir_x(shake_display_value,irandom(359));
+	var dt_view_y = lengthdir_y(shake_display_value,irandom(359));
+	camera_set_view_pos(cam,view_x+dt_view_x,view_y+dt_view_y);
+	
+	shake_display_value -= 1;
+}

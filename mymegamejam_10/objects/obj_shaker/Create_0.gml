@@ -12,3 +12,9 @@ shakes = [
 function shake(target,value) {
 	array_push(shakes,{target : target, value : value });
 }
+
+shake_display_value = 0;
+
+function shake_display(value) {
+	shake_display_value = value;
+}
