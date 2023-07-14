@@ -9,6 +9,7 @@ var _y_dir = keyboard_check_pressed(vk_down)-keyboard_check_pressed(vk_up);
 
 if(_x_dir != 0 or _y_dir != 0){
 	move(_x_dir,_y_dir);
+	yscale_ratio = 0.7;
 	
 	var incy = instance_create_depth(x,y+30,depth,obj_ef_dust);
 	incy.speed = 3;
@@ -63,5 +64,8 @@ if(keyboard_check_pressed(ord("X"))){
 		}
 	}
 }
+
+///띠용
+yscale_ratio += (1-yscale_ratio)/4;
 
 depth = -(y+dt_draw_y+dt_draw_y_2+100);

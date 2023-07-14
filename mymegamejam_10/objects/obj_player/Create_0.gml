@@ -15,6 +15,8 @@ attack_delay_alarm = 0;
 attack_input_time = 0;
 attacked_enemys = {};
 
+yscale_ratio = 1;
+
 function attack()
 {	
 	attacked_enemys = {};

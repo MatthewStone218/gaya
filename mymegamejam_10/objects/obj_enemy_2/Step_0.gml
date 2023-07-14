@@ -6,7 +6,11 @@ event_inherited()
 if(_alarm <= 0)
 {
 	advance();
-	_alarm = 300;
+	if(attack_dis < point_distance(x,y,obj_relic.x,obj_relic.y)){_alarm = 60;}
+	else
+	{
+		_alarm = 180;
+	}
 }
 else
 {
