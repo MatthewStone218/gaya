@@ -56,6 +56,7 @@
     {"name":"rm_upgrade","order":7,"path":"rooms/rm_upgrade/rm_upgrade.yy",},
     {"name":"obj_ef_attack_obsolated","order":4,"path":"objects/obj_ef_attack_obsolated/obj_ef_attack_obsolated.yy",},
     {"name":"spr_enemy_1_attack","order":1,"path":"sprites/spr_enemy_1_attack/spr_enemy_1_attack.yy",},
+    {"name":"spr_upgrade_relic_locked","order":1,"path":"sprites/spr_upgrade_relic_locked/spr_upgrade_relic_locked.yy",},
     {"name":"spr_player_right_attack","order":1,"path":"sprites/spr_player_right_attack/spr_player_right_attack.yy",},
     {"name":"obj_particle","order":7,"path":"objects/obj_particle/obj_particle.yy",},
     {"name":"rm_game_0","order":3,"path":"rooms/rm_game_0/rm_game_0.yy",},
