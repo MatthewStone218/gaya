@@ -4,3 +4,6 @@
 global.ft_title = font_add("fonts/SUITE-ExtraBold.ttf",32,false,false,-1,-1);
 global.ft_info = font_add("fonts/SUITE-Bold.ttf",24,false,false,-1,-1);
 depth = -9999;
+
+
+clear = false;
