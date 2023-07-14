@@ -3,7 +3,7 @@
 
 
 var dt_mouse_x = mouse_x - prev_mouse_x;
-if (abs(dt_mouse_x) >= 10)
+if (abs(dt_mouse_x) >= 1)
 {
 	with(obj_upgrade_relic) {
 		rotate += dt_mouse_x/2;
