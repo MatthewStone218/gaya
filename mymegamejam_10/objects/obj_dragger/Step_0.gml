@@ -8,7 +8,7 @@ if mouse_check_button(mb_left)
 	if (abs(dt_mouse_x) >= 1)
 	{
 		with(obj_upgrade_relic) {
-			rotate += dt_mouse_x/2;
+			rotate += dt_mouse_x/4;
 		}
 	}
 
