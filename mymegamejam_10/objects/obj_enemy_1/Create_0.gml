@@ -2,7 +2,8 @@
 // You can write your code in this editor
 event_inherited();
 
-hp = 20;
+max_hp = 20;
+hp = max_hp;
 
 spr_normal = spr_enemy_1;
 spr_attack = spr_enemy_1_attack;

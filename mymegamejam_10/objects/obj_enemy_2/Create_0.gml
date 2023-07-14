@@ -70,7 +70,8 @@ function hit_relic()
 	incy.atk = 3;
 }
 
-hp = 20;
+max_hp = 20;
+hp = max_hp;
 
 spr_normal = spr_enemy_2;
 spr_attack = spr_enemy_2_attack;
