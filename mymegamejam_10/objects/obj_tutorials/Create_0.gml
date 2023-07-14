@@ -24,6 +24,11 @@ sequence = [
 tuto_index = 0;
 
 function next() {
+	
+	if (tuto_index >= array_length(sequence)) {
+		final();
+	}
+	
 	sequence[tuto_index]();
 	tuto_index += 1;
 	tuto_text_now = "";
@@ -31,3 +36,7 @@ function next() {
 }
 
 next();
+
+function final() {
+	room_goto(rm_game_1);
+}
