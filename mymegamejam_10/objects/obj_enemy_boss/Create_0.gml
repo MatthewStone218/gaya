@@ -23,4 +23,4 @@ spr_attack = spr_enemy_boss_attack;
 attack_frame = 14;
 attack_frame_end = 18;
 
-_alarm = 300;
+_alarm = 80;
