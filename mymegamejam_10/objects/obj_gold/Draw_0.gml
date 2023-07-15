@@ -5,4 +5,4 @@ draw_set_font(global.ft_title);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_self();
-draw_text(x+sprite_xoffset+40,y,global.point);
+//draw_text(x+sprite_xoffset+40,y,global.point);
