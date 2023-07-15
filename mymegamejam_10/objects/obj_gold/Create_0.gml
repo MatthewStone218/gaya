@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-x += 40;
+x += 240;
