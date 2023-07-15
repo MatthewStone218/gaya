@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_upgrade_relic",
-    "path": "sprites/spr_upgrade_relic/spr_upgrade_relic.yy",
+    "name": "spr_stage_btn",
+    "path": "sprites/spr_stage_btn/spr_stage_btn.yy",
   },
   "spriteMaskId": null,
   "visible": true,
