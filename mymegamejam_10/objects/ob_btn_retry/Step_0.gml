@@ -14,7 +14,8 @@ if position_meeting(mouse_x,mouse_y,id)
 	}
 	if mouse_check_button_released(mb_left)
 	{
-		room_restart();
+		room_goto(room);
+		global.game_overed = false;
 		audio_play_sound(snd_btn,1,false);
 	}
 }
