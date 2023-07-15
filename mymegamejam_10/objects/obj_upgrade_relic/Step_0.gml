@@ -11,7 +11,7 @@ if position_meeting(mouse_x,mouse_y,id)
 	}
 	if mouse_check_button_released(mb_left)
 	{
-		if (global.upgrades[my_index] == -1) exit;
+		//if (global.upgrades[my_index] == -1) exit;
 		global.selected_upgrade = my_index;
 		audio_play_sound(snd_btn,1,false);
 	}
@@ -19,7 +19,7 @@ if position_meeting(mouse_x,mouse_y,id)
 
 if(global.selected_upgrade == my_index)
 {
-	if (global.upgrades[my_index] == -1) exit;
+	//if (global.upgrades[my_index] == -1) exit;
 	switch(my_index)
 	{
 		case 0: obj_relic_status.text = $"환두대도\n공격력 {global.upgrades[0]+3} → {global.upgrades[0]+4}"; break;
