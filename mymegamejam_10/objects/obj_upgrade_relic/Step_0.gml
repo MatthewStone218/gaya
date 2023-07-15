@@ -25,7 +25,8 @@ if (global.upgrades[my_index] == -1)
 {
 	//sprite_index = spr_upgrade_relic_locked;
 	sprite_index = spr_upgrade_relic;
-	image_index = 0;
+	//image_index = 0;
+	image_index = my_index;
 }
 else if (global.upgrades[my_index] == 0) 
 {
