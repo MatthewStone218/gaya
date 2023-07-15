@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "draw_title_large",
+  "name": "draw_title8",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

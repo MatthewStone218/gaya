@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_upgrade_relic",
-    "path": "sprites/spr_upgrade_relic/spr_upgrade_relic.yy",
+    "name": "spr_icon_hammer",
+    "path": "sprites/spr_icon_hammer/spr_icon_hammer.yy",
   },
   "spriteMaskId": null,
   "visible": true,

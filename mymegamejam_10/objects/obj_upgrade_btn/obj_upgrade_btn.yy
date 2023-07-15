@@ -5,6 +5,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_upgrade_relic",
-    "path": "sprites/spr_upgrade_relic/spr_upgrade_relic.yy",
+    "name": "spr_upgrade_btn",
+    "path": "sprites/spr_upgrade_btn/spr_upgrade_btn.yy",
   },
   "spriteMaskId": null,
   "visible": true,

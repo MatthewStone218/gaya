@@ -35,6 +35,7 @@ tuto_index = 0;
 function next() {
 	
 	if (tuto_index >= array_length(sequence)) {
+		if (global.upgrades[0] != -1) exit;
 		final();
 		return;
 	}
