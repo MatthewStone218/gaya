@@ -8,7 +8,7 @@ if(_alarm <= 0)
 		timer[num]();
 		num++;
 	}
-	else if(_alarm == -1)
+	else
 	{
 		if !instance_exists(obj_enemy)
 		{
