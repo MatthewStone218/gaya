@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+global.bgm = noone;
 
 global.upgrades = [
 	-1,

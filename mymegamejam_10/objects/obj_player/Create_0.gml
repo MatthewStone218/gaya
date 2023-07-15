@@ -19,9 +19,9 @@ yscale_ratio = 1;
 
 function attack()
 {	
-	attacked_enemys = {};
 	if(attack_delay_alarm <= 0)
 	{
+		attacked_enemys = {};
 		attacking = 1;
 		attack_delay_alarm = attack_delay;
 		sprite_index = spr_player_right_attack;
