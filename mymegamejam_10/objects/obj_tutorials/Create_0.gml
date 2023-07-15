@@ -50,6 +50,7 @@ next();
 function final() {
 	stage_clear(1,function() {
 		global.upgrades[0] = 0;
+		global.stages[1] = true;
 	});
 }
 

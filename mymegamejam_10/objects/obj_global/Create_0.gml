@@ -11,6 +11,13 @@ global.upgrades = [
 	-1,
 ];
 
+global.stages = [
+	true,
+	false,
+	false,
+	false,
+];
+
 global.point = 0;
 
 global.game_overed = false;

@@ -13,7 +13,17 @@ if(_alarm <= 0)
 		if !instance_exists(obj_enemy)
 		{
 			stage_clear(1,function() {
-				global.upgrades[1] = 0;
+				switch(room) {
+					default:	break;
+					case rm_game_1:
+						global.upgrades[1] = 0;
+						global.stages[2] = true;
+						break;
+					case rm_game_2:
+						global.upgrades[1] = 0;
+						global.stages[3] = true;
+						break;
+				}
 			});
 		}
 	}
