@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 
-visible = obj_drawer.clear;
+visible = global.game_overed;
 
 //버튼으로써의 동작
 image_blend = c_white;
