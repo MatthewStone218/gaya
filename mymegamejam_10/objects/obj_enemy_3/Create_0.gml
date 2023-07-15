@@ -3,7 +3,7 @@
 event_inherited();
 
 atk = 10;
-max_hp = 40;
+max_hp = 20;
 hp = max_hp;
 
 spr_normal = spr_enemy_3;
