@@ -273,6 +273,7 @@ function move(_x_dir,_y_dir)
 	gravity = 5;
 	direction = gravity_direction;
 	speed = gravity;
+	audio_play_sound(snd_move,1,false);
 }
 
 function move_tile(tile)

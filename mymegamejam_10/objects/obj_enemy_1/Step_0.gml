@@ -6,7 +6,7 @@ event_inherited()
 if(_alarm <= 0)
 {
 	advance();
-	_alarm = 120;
+	_alarm = 60;
 }
 else
 {

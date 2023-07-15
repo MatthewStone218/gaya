@@ -12,5 +12,6 @@ if position_meeting(mouse_x,mouse_y,id)
 	if mouse_check_button_released(mb_left)
 	{
 		room_goto(rm_upgrade);
+		audio_play_sound(snd_btn,1,false);
 	}
 }

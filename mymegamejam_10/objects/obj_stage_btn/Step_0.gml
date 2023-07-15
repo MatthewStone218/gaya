@@ -12,5 +12,6 @@ if position_meeting(mouse_x,mouse_y,id)
 	if mouse_check_button_released(mb_left)
 	{
 		room_goto(asset_get_index("rm_game_"+string(my_index)));
+		audio_play_sound(snd_btn,1,false);
 	}
 }

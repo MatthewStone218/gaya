@@ -4,7 +4,7 @@
 event_inherited();
 
 atk = 3;
-attack_delay = 20;
+attack_delay = 30;
 
 attack_frame = 3;
 attack_frame_end = 4;
@@ -27,6 +27,8 @@ function attack()
 		sprite_index = spr_player_right_attack;
 		image_speed = (sprite_get_number(spr_player_right_attack)*room_speed)/(attack_delay);
 	}
+	
+	audio_play_sound(snd_attack,1,false);
 }
 
 function hit_enemy()

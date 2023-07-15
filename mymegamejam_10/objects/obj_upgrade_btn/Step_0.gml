@@ -15,6 +15,8 @@ if position_meeting(mouse_x,mouse_y,id)
 		{
 			global.point -= 1;
 			global.upgrades[global.selected_upgrade] += 1;
+			audio_play_sound(snd_upgrade,1,false);
 		}
+		audio_play_sound(snd_btn,1,false);
 	}
 }

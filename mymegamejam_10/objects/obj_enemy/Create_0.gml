@@ -78,6 +78,8 @@ function attack()
 	attacking = 1;
 	sprite_index = spr_attack;
 	image_index = 0;
+	
+	audio_play_sound(snd_attack,1,false);
 }
 
 function hit_relic()
