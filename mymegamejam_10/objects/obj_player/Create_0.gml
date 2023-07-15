@@ -27,12 +27,11 @@ function attack()
 		sprite_index = spr_player_right_attack;
 		image_speed = (sprite_get_number(spr_player_right_attack)*room_speed)/(attack_delay);
 	}
-	
-	audio_play_sound(snd_attack,1,false);
 }
 
 function hit_enemy()
 {
+	if(attacked == 0){audio_play_sound(snd_attack,1,false);}
 	attacked = 1;
 	
 	var _list = ds_list_create();
