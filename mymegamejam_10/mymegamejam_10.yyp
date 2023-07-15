@@ -124,6 +124,7 @@
     {"id":{"name":"bg_main","path":"sprites/bg_main/bg_main.yy",},},
     {"id":{"name":"spr_enemy_3","path":"sprites/spr_enemy_3/spr_enemy_3.yy",},},
     {"id":{"name":"spr_spawn_point_2","path":"sprites/spr_spawn_point_2/spr_spawn_point_2.yy",},},
+    {"id":{"name":"draw_title_large","path":"scripts/draw_title_large/draw_title_large.yy",},},
     {"id":{"name":"obj_spawn_point_2","path":"objects/obj_spawn_point_2/obj_spawn_point_2.yy",},},
     {"id":{"name":"bgm_boss","path":"sounds/bgm_boss/bgm_boss.yy",},},
     {"id":{"name":"spr_upgrade_relic_locked","path":"sprites/spr_upgrade_relic_locked/spr_upgrade_relic_locked.yy",},},

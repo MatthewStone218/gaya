@@ -80,6 +80,7 @@
     {"name":"spr_enemy_1_attack","order":1,"path":"sprites/spr_enemy_1_attack/spr_enemy_1_attack.yy",},
     {"name":"spr_map_2","order":2,"path":"sprites/spr_map_2/spr_map_2.yy",},
     {"name":"spr_spawn_point_2","order":1,"path":"sprites/spr_spawn_point_2/spr_spawn_point_2.yy",},
+    {"name":"draw_title_large","order":7,"path":"scripts/draw_title_large/draw_title_large.yy",},
     {"name":"obj_spawn_point_2","order":1,"path":"objects/obj_spawn_point_2/obj_spawn_point_2.yy",},
     {"name":"spr_upgrade_relic_locked","order":1,"path":"sprites/spr_upgrade_relic_locked/spr_upgrade_relic_locked.yy",},
     {"name":"spr_player_right_attack","order":1,"path":"sprites/spr_player_right_attack/spr_player_right_attack.yy",},
