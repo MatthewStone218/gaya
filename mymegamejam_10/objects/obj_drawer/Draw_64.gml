@@ -9,5 +9,7 @@ if (clear)
 	draw_rectangle(0,0,room_width,room_height,false);
 	draw_set_alpha(1);
 	
-	draw_title_large(room_width/2,room_height/2,"Stage Cleared!",c_white);
+	draw_title_large(room_width/2,420,"Stage Cleared!",c_white);
+	draw_title(room_width/2,540,"Stage + 1",c_white);
+	draw_title(room_width/2,600,"Gold + 1",c_white);
 }
